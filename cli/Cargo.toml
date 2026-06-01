@@ -1,0 +1,16 @@
+[package]
+name = "spl-rwa"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "spl-rwa"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+solana-sdk = "3.0.0"
+solana-client = "3.0.0"
+anchor-lang = "1.0.2"
+rwa-program = { path = "../programs/rwa-program" }
+shellexpand = "3"
